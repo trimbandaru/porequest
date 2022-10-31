@@ -109,7 +109,7 @@ sap.ui.define([
                 var appModulePath = this.getModulePath();
                 var that = this;
                 $.ajax({
-                    url: appModulePath + "/bpmworkflowruntimerest/v1/xsrf-token",
+                    url: appModulePath + "/bpmworkflowruntime/public/workflow/rest/v1/xsrf-token",
                     async: false, 
                     method: "GET",
                     headers: {
@@ -177,7 +177,9 @@ sap.ui.define([
                
                 var workflowStartPayload = {definitionId: "poprocess", context: startContext}
 
-                var sPath = this.getModulePath()+"/bpmworkflowruntimerest/v1/workflow-instances";
+                var sPath = this.getModulePath()+"/bpmworkflowruntime/public/workflow/rest/v1/workflow-instances";
+
+                
                
                 this.callRESTService(sPath, workflowStartPayload, "POST", this.TOKEN, function(){
                     MessageBox.information("Workflow started with PO Number: "+sPONumber);

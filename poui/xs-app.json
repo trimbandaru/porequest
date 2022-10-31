@@ -5,15 +5,8 @@
     {
         "source": "^/bpmworkflowruntime/(.*)$",
         "target": "/$1",
-        "service": "com.sap.bpm.workflow",
-        "endpoint": "workflow_odata_url",
-        "authenticationType": "xsuaa"
-    },
-    {
-        "source": "^/bpmworkflowruntimerest/(.*)$",
-        "target": "/$1",
-        "service": "com.sap.bpm.workflow",
-        "endpoint": "workflow_rest_url",
+        "service": "com.sap.spa.processautomation",
+        "endpoint": "api",
         "authenticationType": "xsuaa"
     },
     {
