@@ -54,7 +54,7 @@ sap.ui.define([
                         "ponumber": "",
                         "supplier": "Semi Corporation",
                         "vendorcode":"100989",
-                        "netValue": "200000"
+                        "netValue": 200000
                     },
                     "Receipent": {
                         "cc": "100",
@@ -175,7 +175,7 @@ sap.ui.define([
                 startContext.RequestId = sPONumber;
                 startContext.BasicData.ponumber = sPONumber;
                
-                var workflowStartPayload = {definitionId: "poprocess", context: startContext}
+                var workflowStartPayload = {definitionId: "us10.25ade945trial.poprocess.pOFlow", context:{input: startContext}}
 
                 var sPath = this.getModulePath()+"/bpmworkflowruntime/public/workflow/rest/v1/workflow-instances";
 
