@@ -175,7 +175,7 @@ sap.ui.define([
                 startContext.RequestId = sPONumber;
                 startContext.BasicData.ponumber = sPONumber;
                
-                var workflowStartPayload = {definitionId: "us10.25ade945trial.poprocess.pOFlow", context:{input: startContext}}
+                var workflowStartPayload = {definitionId: "us10.demo-nrdspy5x.purchaseorderprocess.purchaseOrderFlow", context:{input: startContext}}
 
                 var sPath = this.getModulePath()+"/bpmworkflowruntime/public/workflow/rest/v1/workflow-instances";
 
